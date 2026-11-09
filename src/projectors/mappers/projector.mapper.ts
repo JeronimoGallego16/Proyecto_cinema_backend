@@ -16,7 +16,7 @@ export class ProjectorMapper {
     } as Projector;
   }
 
-  static mergeEntity(entity: Projector, dto: UpdateProjectorDto): Projector {
+  static mergeEntity(entity: Projector, dto: UpdateProjectorDto): Projector { //se hace para decir que cambo se reemplazó por cual cambio
     if (dto.brand !== undefined) entity.brand = dto.brand;
     if (dto.high !== undefined) entity.high = dto.high;
     if (dto.width !== undefined) entity.width = dto.width;
